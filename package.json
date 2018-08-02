@@ -1,0 +1,26 @@
+{
+  "name": "trumphaikubot",
+  "version": "1.0.0",
+  "description": "A dashboard/twitter bot to manage Haikus auto-generated from @realDonaldTrump",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisJRyan/TrumpHaikuBot.git"
+  },
+  "author": "Travis Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TravisJRyan/TrumpHaikuBot/issues"
+  },
+  "homepage": "https://github.com/TravisJRyan/TrumpHaikuBot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "mysql": "^2.16.0",
+    "pug": "^2.0.3"
+  }
+}
