@@ -6,9 +6,23 @@ head
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
 
 .col-md-10.offset-md-1
+    h1.text-center Trump Haiku Dashboard
+    hr
     .row
         -for(var i = 0; i < haikus.length; i++)
             .col-md
                 .card(style='width: 18rem; padding: 5px;"')
                     .card-body(style="background-color: lightblue")
                         p.card-text(style="white-space: pre-wrap;")=haikus[i]["HaikuText"]
+                        .row.text-center(style="float: none; margin: 0 auto;")
+                            button.btn-primary Copy
+                            h3 &nbsp;
+                            button.btn-danger(onclick="deleteHaiku("+haikus[i]["QueuePosition"]+")") Delete
+    card.card(style='width: 25rem; height:15rem; padding: 5px; bottom: 20; right: 20; position: fixed;"')
+        .card-body
+            textarea.form-control(rows='3' style='max-width: 23rem; max-height:14rem;')
+            hr
+            button.btn-primary Queue This Tweet
+
+script.
+    function deleteHaiku(queuePosition){ console.log("Deleting haiku at position "+queuePosition); }
