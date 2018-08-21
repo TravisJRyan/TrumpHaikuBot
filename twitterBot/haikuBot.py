@@ -21,7 +21,7 @@ def connect():
         if conn.is_connected():
             print('Connected to MySQL database')
         cursor = conn.cursor()
-        cursor.execute("SELECT HaikuText, QueuePosition FROM Haiku WHERE Verified = 1 LIMIT 1;")
+        cursor.execute("SELECT HaikuText, QueuePosition FROM Haiku WHERE Verified = 1 ORDER BY QueuePosition LIMIT 1;")
         row = cursor.fetchone()
         if row is not None:
             api.update_status(row[0].replace("\n\n", "\n"))
