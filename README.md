@@ -7,3 +7,5 @@ Screenshots:
 ![Tweet Example](https://github.com/TravisJRyan/TrumpHaikuBot/blob/master/tweetScreenshot.png)
 
 ![Dashboard Screenshot](https://github.com/TravisJRyan/TrumpHaikuBot/blob/master/dashboardScreenshot.png)
+
+Trump's tweets can all be downloaded in JSON format here: http://www.trumptwitterarchive.com/
