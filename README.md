@@ -9,3 +9,4 @@ Screenshots:
 ![Dashboard Screenshot](https://github.com/TravisJRyan/TrumpHaikuBot/blob/master/dashboardScreenshot.png)
 
 Trump's tweets can all be downloaded in JSON format here: http://www.trumptwitterarchive.com/
+Haikus were generated using another project of mine, a poem-generator called Cyrano: https://github.com/TravisJRyan/Cyrano
